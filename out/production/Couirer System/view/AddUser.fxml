@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddUserController">
+   <children>
+      <ImageView fitHeight="521.0" fitWidth="334.0" opacity="0.17" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../asset/1x/2968290.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="117.0" layoutY="14.0" prefHeight="28.0" prefWidth="99.0" text="New User" textFill="#e80000">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="67.0" layoutY="41.0" prefWidth="200.0" style="-fx-background-color: red;" />
+      <AnchorPane layoutX="70.0" layoutY="81.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtId" layoutX="12.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="U00" style="-fx-background-color: white;" />
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="User Id" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="71.0" layoutY="152.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtName" layoutX="14.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="Sithum Ameesha" style="-fx-background-color: white;" />
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="Name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="70.0" layoutY="232.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtAddress" layoutX="12.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="Province,City,Street" style="-fx-background-color: white;" />
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="Address" />
+         </children>
+      </AnchorPane>
+      <TextField layoutX="81.0" layoutY="308.0" prefHeight="25.0" prefWidth="176.0" promptText="Province,City,Street" style="-fx-background-color: white;" />
+      <AnchorPane layoutX="69.0" layoutY="299.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtEmail" layoutX="14.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="Email@.com" style="-fx-background-color: white;" />
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="Email" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="71.0" layoutY="377.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="Password" />
+            <PasswordField fx:id="txtPassword" layoutX="14.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="Password" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="BtnAdd" layoutX="135.0" layoutY="455.0" mnemonicParsing="false" onAction="#AddUserOnAction" prefHeight="29.0" prefWidth="68.0" style="-fx-background-color: #487eb0;" text="Add">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

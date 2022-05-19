@@ -1,0 +1,17 @@
+.btn{
+    -fx-background-color: #239c9c;
+    -fx-border-radius: 8px;;
+}
+.backgroundColor{
+    -fx-background-color: linear-gradient(to right,#44bd32, #dcdde1);
+}
+.texPane{
+    -fx-background-color: #dfe6e9;
+    -fx-background-radius: 25;
+}
+.anchorpane {
+    -fx-background-color: linear-gradient(to left, #44bd32, #dcdde1);
+}
+.table-row-cell{
+    -fx-font-weight: bold;
+}

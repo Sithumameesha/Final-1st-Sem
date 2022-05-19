@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RiderDetails" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="824de2ba-4179-4378-8d74-0a9f16f4596b">
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String"/>
+	<field name="riderName" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="contact" class="java.lang.Integer"/>
+	<field name="riderPayment" class="java.lang.String"/>
+	<field name="date" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="208" y="10" width="138" height="30" uuid="67ab0c44-8814-49b1-bea1-68c49ea6e579"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Rider Details]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="460" y="10" width="100" height="30" uuid="1d533ddb-7941-40b4-8b4c-2b06b8f1af48"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="460" y="40" width="100" height="30" uuid="6221622a-ffb6-4207-82a1-d2a8b4ebf8c4"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-1" y="70" width="546" height="1" uuid="c20f8b0c-30da-47cf-9006-d3c47bf88ba5"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="23" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="60" height="30" uuid="48315438-343e-4703-b288-283e53746789">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="93de76fd-55d5-434b-a7f6-cdaac68a0697"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="10" width="100" height="30" uuid="24cc05cc-54d9-4314-b0d2-fc8b3fc48aa8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="71462f00-546f-4bd0-b316-3965eb1d57fc"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[riderName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="10" width="140" height="30" uuid="f0c9b0c3-88c4-4185-8c64-2762a1d97651">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38fd3043-623f-41f3-b4c8-bbd899c79e70"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="10" width="100" height="30" uuid="f38c8dda-7700-44e8-be5f-639afd3c6919">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bb1b3101-9c4c-461e-b42a-a482cdcc246f"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[contact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="10" width="90" height="30" uuid="7f3e5aea-94b7-4d39-9e44-963a3ba39d62">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59c84a75-fcf4-43ee-ba83-2ae014046302"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[riderPayment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="490" y="10" width="80" height="30" uuid="703b0d2a-5427-478c-86d7-15f4947bbc02">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09af4d7e-30ab-4a28-991c-c2d4f8dbaad2"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="30" width="60" height="30" uuid="00f7f935-d15a-411d-90f9-79f542a23504">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="93de76fd-55d5-434b-a7f6-cdaac68a0697"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="62" y="30" width="100" height="30" uuid="3cec2cff-52c3-4a5d-a545-4bed95a8ad07">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="71462f00-546f-4bd0-b316-3965eb1d57fc"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{riderName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="30" width="140" height="30" uuid="9ca5131a-2fde-452f-a671-601c9cef7b39">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="38fd3043-623f-41f3-b4c8-bbd899c79e70"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="30" width="100" height="30" uuid="ef845211-4b67-4a93-b9ea-9525e7b9b377">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bb1b3101-9c4c-461e-b42a-a482cdcc246f"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{contact}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="30" width="90" height="30" uuid="611eacb4-4d60-47ac-a24d-88b2b5889fed">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59c84a75-fcf4-43ee-ba83-2ae014046302"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{riderPayment}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="490" y="30" width="80" height="30" uuid="dc67333b-6a9d-4413-bf9f-e38eb6d90199">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="09af4d7e-30ab-4a28-991c-c2d4f8dbaad2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="182" y="12" width="181" height="30" uuid="1e0e6d41-ad53-4885-bbf3-efc768ebf0f2"/>
+				<text><![CDATA[S&D Couirer Servise Private Ltd]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Context" prefHeight="538.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateAdminAccountController">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="328.0" opacity="0.48" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../asset/1x/2968290.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="94.0" layoutY="14.0" text="Create New Account" textFill="#e80606">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="64.0" layoutY="33.0" prefWidth="200.0" />
+      <AnchorPane layoutX="58.0" layoutY="59.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtName" layoutX="12.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="Sithum Ameesha" style="-fx-background-color: white;" />
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="Name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="59.0" layoutY="130.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtId" layoutX="14.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="2000XXXXX" style="-fx-background-color: white;" />
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="Id" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="58.0" layoutY="210.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtAddress" layoutX="12.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="Province,City,Street" style="-fx-background-color: white;" />
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="Address" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="57.0" layoutY="338.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="Password" />
+            <PasswordField fx:id="txtPassword" layoutX="14.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="Password" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="57.0" layoutY="405.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="-1.0" layoutY="-10.0" prefHeight="19.0" prefWidth="74.0" style="-fx-background-color: white; -fx-border-color: white;" text="Re-Password" />
+            <PasswordField fx:id="txtRePassword" layoutX="12.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="Re-type" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnCreate" layoutX="104.0" layoutY="489.0" onAction="#btnCreateOnAction" prefHeight="25.0" prefWidth="106.0" style="-fx-background-color: #3498db;" text="Create">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="58.0" layoutY="278.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="54.0" style="-fx-background-color: white; -fx-border-color: white;" text="Email" />
+            <TextField fx:id="txtEmail" layoutX="15.0" layoutY="10.0" onKeyReleased="#textFields_Key_Released" prefHeight="25.0" prefWidth="176.0" promptText="Name@gmail.com" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

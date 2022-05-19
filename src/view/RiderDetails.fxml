@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="555.0" prefWidth="773.0" style="-fx-border-radius: 25; -fx-background-radius: 25; -fx-border-color: black; -fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RiderDetailsController">
+   <children>
+      <Label layoutX="327.0" layoutY="19.0" style="-fx-background-color: white;" text="Rider Deatils" textFill="#bc1313">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="287.0" layoutY="49.0" prefWidth="200.0" style="-fx-background-color: red;" />
+      <Label layoutX="646.0" layoutY="25.0" style="-fx-background-color: white;" text="Date">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="682.0" layoutY="25.0" style="-fx-background-color: white;" text="2022/03/15" textFill="#da0d0d" />
+      <AnchorPane layoutX="34.0" layoutY="107.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-radius: 25; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <ComboBox fx:id="rmdName" layoutX="25.0" layoutY="10.0" prefWidth="150.0" promptText="Name" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="34.0" layoutY="96.0" prefHeight="19.0" prefWidth="85.0" style="-fx-background-color: white; -fx-border-color: white;" text="Rider Name" />
+      <AnchorPane layoutX="296.0" layoutY="105.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtId" layoutX="22.0" layoutY="8.0" prefHeight="25.0" prefWidth="176.0" promptText="R00" style="-fx-background-color: white;" />
+            <Label layoutX="-5.0" layoutY="-9.0" prefHeight="19.0" prefWidth="72.0" style="-fx-background-color: white; -fx-border-color: white;" text="Id" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="547.0" layoutY="105.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="58.0" style="-fx-background-color: white; -fx-border-color: white;" text="Address" />
+            <TextField fx:id="txtAddress" layoutX="12.0" layoutY="10.0" prefHeight="25.0" prefWidth="176.0" promptText="City,Province,Street" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="34.0" layoutY="185.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <Label layoutX="-5.0" layoutY="-9.0" prefHeight="19.0" prefWidth="57.0" style="-fx-background-color: white; -fx-border-color: white;" text="Contact" />
+            <TextField fx:id="txtContact" layoutX="14.0" layoutY="8.0" prefHeight="25.0" prefWidth="176.0" promptText="077/071/078-XXXX" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="293.0" layoutY="185.0" prefHeight="44.0" prefWidth="200.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;">
+         <children>
+            <TextField fx:id="txtItemsNum" layoutX="12.0" layoutY="10.0" prefHeight="25.0" prefWidth="176.0" promptText="0000" style="-fx-background-color: white;" />
+            <Label layoutY="-9.0" prefHeight="19.0" prefWidth="121.0" style="-fx-background-color: white; -fx-border-color: white;" text="Nun Of Delivery Items" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnCalculate" layoutX="651.0" layoutY="195.0" mnemonicParsing="false" onAction="#btnCalculateOnAction" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #487eb0;" text="Calculate">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="732.0" layoutX="19.0" layoutY="285.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../asset/1x/3686725.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblRiderDetails" layoutX="17.0" layoutY="286.0" opacity="0.5" prefHeight="200.0" prefWidth="732.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="75.0" text="RiderName" />
+            <TableColumn fx:id="colRiderName" prefWidth="163.0" text="Id" />
+            <TableColumn fx:id="colAddress" prefWidth="181.0" text="Address" />
+            <TableColumn fx:id="colContact" prefWidth="92.0" text="Contact" />
+            <TableColumn fx:id="colRiderPayment" prefWidth="107.0" text="Rider Payment" />
+            <TableColumn fx:id="coldate" prefWidth="105.0" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="34.0" layoutY="512.0" text="Rider Payment">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPayment" layoutX="165.0" layoutY="507.0" text="0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="659.0" layoutY="63.0" mnemonicParsing="false" onAction="#btnNewRiderOnAction" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #487eb0;" text="New Rider+">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="SteItems" layoutX="655.0" layoutY="500.0" mnemonicParsing="false" onAction="#SteItemsOnAction" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #487eb0;" text="SetItems">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
